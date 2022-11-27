@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+  height: 60px; 
+  background-color: black;
+}
+.container ul{
+  display: flex;
+  /* flex-direction: column; */
+  list-style: none;
+  padding: 15px;
+  font-size: 25px;
+  color: white;
+}
+#logo{
+  font-size: 30px;
+  color: wheat;
+  margin-right: 20px ;
+  background: black;
+}
+.container ul li{
+  padding: 0px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.news-box{
+  margin: 50px 30px;
+  margin-top: 20px;
+  height: 300px;
+  width: 420px;
+  /* background: black; */
+  border: 2px solid rgba(47, 140, 226, 0.237);
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(47, 140, 226, 0.237);
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  /* justify-content: center; */
+  
+}
+.news-img{
+  height: 200px;
+  width: 94%;
+  
+}
+.headline{
+  margin-top: 15px;
+  font-size: 20px;
+
+}
+.btn{
+  background: rgb(12, 139, 193);
   color: white;
+  border-radius: 10px;
+  height: 20px;
+  width: 100px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.items{
+  display: flex;
+  flex-wrap: wrap;
+}
+.categories{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin:  auto;
+  margin-top: 10px;
+  /* background-color: blue; */
+}
+.categories a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 0px 20px;
+  background-color: rgba(0, 0, 0, 0.462);
+  border-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  animation: spin 4s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.buttons{
+  display: flex;
+}
+.buttons button{
+  background: rgb(193, 12, 12);
+  color: white;
+  border-radius: 10px;
+  height: 30px;
+  width: 70px;
+  margin-top: 10px;
+  text-decoration: none;
+  margin: auto ;
+  margin-bottom: 30px;
+}
+.date{
+  position: absolute;
+  margin-top: 11%;
+  background: white;
+  width: 100px;
+  border-radius: 15px;
+  opacity: 0.5;
 }
